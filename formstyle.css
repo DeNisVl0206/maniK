@@ -1,0 +1,69 @@
+
+
+header {
+   
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* Стили для всей страницы */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex; /* Используем Flexbox для выравнивания */
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: center; /* Центрирование по вертикали */
+    height: 100vh; /* Высота экрана */
+    background-color: #fef7d2;
+    font-family: Arial, sans-serif;
+}
+
+.form-container {
+    background-color: #ffffff; /* Белый фон */
+    border-radius: 20px; /* Скругленные углы */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Тень */
+    padding: 30px;
+    width: 600px; /* Ширина формы */
+    height: 500px;
+    text-align: center; /* Выравнивание текста в контейнере */
+}
+
+
+/* Заголовок */
+.form-container h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Стили для формы */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Расстояние между элементами */
+}
+
+/* Поля ввода и выбора */
+form input, form select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+/* Кнопка */
+form button {
+    padding: 10px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #ff6f61; /* Цвет кнопки */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #ff867f; /* Цвет кнопки при наведении */
+}

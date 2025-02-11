@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма записи</title>
+    <link rel="stylesheet" href="formstyle.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Запись на услуги</h1>
+        <form action="submit.php" method="POST">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Телефон:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="service">Выберите услугу:</label>
+            <select id="service" name="service" required>
+                <option value="manicure">Маникюр</option>
+                <option value="pedicure">Педикюр</option>
+                <option value="nail-design">Дизайн ногтей</option>
+            </select>
+
+            <label for="date">Выберите дату:</label>
+            <input type="date" id="date" name="date" required>
+
+            <button type="submit">Записаться</button>
+        </form>
+    </div>
+</body>
+</html>

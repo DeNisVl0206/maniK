@@ -1,0 +1,279 @@
+
+
+header {
+   
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* Стили для всей страницы */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fef7d2;
+    font-family: 'Playfair Display', serif; /* Устанавливаем шрифт */
+
+}
+
+/* Меню навигации, фиксированное сверху */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #2a0000;
+    color: white;
+    padding:15px 0 0 0;
+    z-index: 2; /* Меню должно быть сверху, но ниже рук */
+    height: 40px;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content:center ;
+}
+
+.navbar ul li {
+    margin: 0 20px;
+    
+}
+
+.navbar ul li a {
+    color: #fef7d2;
+
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+    
+
+}
+
+
+
+
+
+
+
+/* Стили для главного блока */
+.main-header {
+    position: relative; /* Позволяет позиционировать элементы внутри блока */
+   
+    height: 100vh; /* Высота блока на весь экран */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 20px 20px 20px; /* Отступ сверху для меню */
+    overflow: hidden; /* Убирает прокрутку, если что-то выйдет за границы */
+}
+
+
+
+/* Изображение с руками */
+.hands-image {
+    position: absolute; /* Позволяет разместить руки за пределами блока */
+   top: -100px;
+    right: -100px; /* Выводим за правый край экрана */
+    width: 710px; /* Задаём ширину изображения */
+    height: auto;
+    /* Расположение поверх других элементов */
+    overflow: none;
+    margin-left: 10px;
+}
+
+/* Полукруги */
+.circle1 {
+    position: absolute;
+    left: -400px;
+    top: 50px;
+   /*  transform: translateY(-50%);  Центрируем по вертикали */
+   border-radius: 50%;
+   width: 850px;
+   height: 850px;
+   display: flex;
+   align-items: center;
+   background-color: #930303;  /* Цвет фона */
+    overflow: hidden;  /* Обрезаем все, что выходит за пределы */
+   
+    margin-right: 100px;
+}
+
+.circle2 {
+    width: 800px;
+    height: 800px;
+    background-color: #9f0512;  /* Цвет фона */
+    align-items: center;        /* Вертикальная центровка */
+    border-radius: 50%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    
+}   
+/* Левый полукруг */
+.circle3 {
+    width: 650px;
+    height: 650px;
+    background-color: #c10413;  /* Цвет фона */
+    align-items: center;        /* Вертикальная центровка */
+    border-radius: 50%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    
+}  
+
+.text{
+ width: 100%;
+  z-index: 1;
+    padding: 1px;
+    
+}
+
+.text1 {
+    font-size: 7rem;
+    margin-left: -20px;
+margin-top: -30px;
+
+    color: #320b0b;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    font-family: 'Playfair Display', serif; /* Устанавливаем шрифт */
+    
+}
+
+.text2 {
+    font-size: 7rem;
+    margin-top: -20px;
+margin-left: 50px;
+color: #320b0b;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    font-family: 'Playfair Display', serif; /* Устанавливаем шрифт */
+    
+}
+
+.text3 {
+    font-size: 7rem;
+    margin-top: -20px;
+
+    margin-left: 80px;
+    color: #320b0b;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2);
+    font-family: 'Playfair Display', serif; /* Устанавливаем шрифт */
+    
+}
+
+.text4 {
+    font-size: 7rem;
+    margin-left: 60px;
+    margin-top: -20px;
+    color: #320b0b;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    font-family: 'Playfair Display', serif; /* Устанавливаем шрифт */
+    
+}
+
+
+/* Контейнер для кнопки */
+.button{
+    display: flex;
+    justify-content: center; /* Центрируем кнопку по горизонтали */
+    margin-left: 10px;
+    z-index: 2;
+   
+}
+
+
+
+/* Стили кнопки */
+.form_button {
+    display: inline-block;
+  
+    padding-right: 30px;
+    font-size: 2.4rem; /* Размер текста */
+    color: #fff700; /* Цвет текста */
+    background-color: #dd4c3e; /* Цвет кнопки (корраловый) */
+    text-decoration: none; /* Убираем подчеркивание */
+    border-radius: 50px; /* Закругленные края */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Анимация */
+    box-shadow: 15px 0px 30px rgb(255, 236, 29); /* Тень */
+    text-align: right;
+    align-items: center; /* Центрирует текст вертикально */
+    padding-top: 150px;
+    
+
+   
+    
+    height:400px;
+    width: 500px;
+    border-radius: 50%;
+    border: none;
+}
+
+/* Ховер-эффект */
+.form_button:hover {
+    background-color: #f29408; /* Светлее при наведении */
+    transform: scale(1.05); /* Увеличение кнопки */
+    box-shadow: 15px 0px 1cap rgb(255, 236, 29); /* Тень */
+    color: #480a0a;
+}
+
+
+
+    
+
+
+
+
+
+
+
+/* Мобильная версия */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+
+
+
