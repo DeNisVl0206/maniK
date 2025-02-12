@@ -254,7 +254,7 @@ color: #320b0b;
 /* Мобильная версия */
 @media (max-width: 1200px) {
     body {
-        font-size: 14px;
+        font-size: 2px;
     }
 
     nav ul {
